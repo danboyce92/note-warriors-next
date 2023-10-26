@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Raleway } from 'next/font/google'
+import NavBar from './NavBar'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        {children}
+        <nav><NavBar /></nav>
+      </body>
     </html>
   )
 }

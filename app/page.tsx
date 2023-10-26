@@ -7,8 +7,15 @@ export default function Home() {
         <div className='title-container'>
           <div className='title'>Note <br/> Warriors</div>
           <div className='text'>Score High, Soar Higher. <br/> Play, Learn, Conquer.</div>  
-          <a className='registerButton'>Register</a>
-          <a className='signinButton'>Sign in</a>
+          <div className='buttons'>
+              <button className='registerButton'>Register</button>
+              <div className='spacer'></div>
+              <button className='signinButton'>Sign in</button>
+            
+          </div>
+            
+          
+
         </div>
  
       </div>
