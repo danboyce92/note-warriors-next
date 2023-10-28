@@ -1,8 +1,14 @@
 import React from 'react'
+import './about-us.css';
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div className='aboutUs'>
+      <div className='shader'>
+
+      </div>
+      AboutUs
+    </div>
   )
 }
 
