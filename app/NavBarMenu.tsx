@@ -9,17 +9,21 @@ const NavBarMenu = () => {
 
   const handleExitClick = () => {
     setIsChecked(!isChecked);
+    console.log(isChecked);
+    console.log(toggle);
   };
 
-  const toggle = isChecked ? 'active' : '';
+  const toggle = isChecked ? 'active' : 'inactive';
 
   return (
     <div>
       <div className='menu-button'>
-      <Image src={hburg} alt="hamburger icon" width={60} id='icon' />
-      <input onClick={handleExitClick} type='checkbox' id="hburg-toggle" checked={isChecked}/>
+        <label htmlFor="hburg-toggle">
+          <Image src={hburg} alt="hamburger icon" width={60} id='icon' />
+        </label>
+        <input onChange={handleExitClick} type='checkbox' id="hburg-toggle" checked={isChecked}/>
       </div>
-      <div className={`${toggle} hello`}>
+      <div className={`${toggle}`} id="list">
         <div className='exit' onClick={handleExitClick}>X</div>
         <div className='link'>About us</div>
         <div className='link'>Teachers</div>

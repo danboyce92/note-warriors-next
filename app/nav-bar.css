@@ -47,18 +47,7 @@ padding-right: 2rem;
     justify-content: space-between;
     align-items: center;
 
-    
-
   }
-
-  .logo {
-
-  }
-
-  #icon {
-    position: absolute;
-  }
-
 
   .hburger {
     right: 0%;
@@ -76,14 +65,18 @@ padding-right: 2rem;
     box-shadow: 1px 1px white;
   }
 
-  #hello {
+  .menu-button {
+
+  }
+
+  #list {
     position: absolute;
     top: -40%;
     right: 0%;
     height: max-content;
     background-color: #3F3E3E;
     width:clamp(230px, 50vw, 60%);
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     padding: 2.2rem 1rem;
     border-bottom-left-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -96,11 +89,20 @@ padding-right: 2rem;
     cursor: pointer;
   }
 
+  #icon {
+    cursor: pointer;
+  }
+
   .link {
     padding: 0;
     margin: 3rem 2rem;
     cursor: pointer;
     font-size: clamp(1rem, 6vw, 1.7rem);
+    transition: all 1s ease-in-out;
+  }
+
+  .link:hover {
+    text-decoration: underline;
   }
 
 
@@ -114,13 +116,21 @@ padding-right: 2rem;
 
   }
 
-  #hburg-toggle:checked + #hello {
+  /* #hburg-toggle:checked + #list {
     transform: translateX(0%);
+  } */
+
+  .active {
+    transform: translateX(0%);
+  }
+
+  .inactive {
+    transform: translateX(100%);
   }
 
   #hburg-toggle {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     z-index: 3;
     width: 100%;
     height: max-content;
