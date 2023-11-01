@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import hburg from '../public/imgs/hburg.svg';
 
 const NavBarMenu = () => {
@@ -9,8 +10,6 @@ const NavBarMenu = () => {
 
   const handleExitClick = () => {
     setIsChecked(!isChecked);
-    console.log(isChecked);
-    console.log(toggle);
   };
 
   const toggle = isChecked ? 'active' : 'inactive';
@@ -25,13 +24,12 @@ const NavBarMenu = () => {
       </div>
       <div className={`${toggle}`} id="list">
         <div className='exit' onClick={handleExitClick}>X</div>
-        <div className='link'>About us</div>
-        <div className='link'>Teachers</div>
-        <div className='link'>Students</div>
-        <div className='link'>FAQ</div>
-        <div className='link'>Contact</div>
-        <div className='link' id="signIn">Sign in</div>
-
+        <Link href={"/about-us"}><div onClick={handleExitClick} className='link'>About us</div></Link>
+        <Link href={"/teachers"}><div className='link'>Teachers</div></Link>
+        <Link href={"/students"}><div className='link'>Students</div></Link>
+        <Link href={"/faq"}><div className='link'>FAQ</div></Link>
+        <Link href={"/contact"}><div className='link'>Contact</div></Link>
+        <Link href={"/sign-in"}><div className='link' id="signIn">Sign in</div></Link>
       </div>
   </div> 
   )

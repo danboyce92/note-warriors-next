@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import './nav-bar.css';
 import NavBarMenu from './NavBarMenu';
 import logo from '../public/imgs/logo.png';
@@ -11,16 +12,16 @@ const NavBar = () => {
     <div className='nav'>
       <div className='navBar'>
         <div className='logo'>
-          <Image src={logo} width={65} alt="logo" />
+          <Link href={"/"}><Image src={logo} width={65} alt="logo" /></Link>
         </div>
 
         <div className='links'>
-          <div className='link'>About us</div>
-          <div className='link'>Teachers</div>
-          <div className='link'>Students</div>
-          <div className='link'>FAQ</div>
-          <div className='link'>Contact</div>
-          <div className='link' id="signIn">Sign in</div>
+        <Link href={"/about-us"}><div className='link'>About us</div></Link>
+        <Link href={"/teachers"}><div className='link'>Teachers</div></Link>
+        <Link href={"/students"}><div className='link'>Students</div></Link>
+        <Link href={"/faq"}><div className='link'>FAQ</div></Link>
+        <Link href={"/contact"}><div className='link'>Contact</div></Link>
+        <Link href={"/sign-in"}><div className='link' id="signIn">Sign in</div></Link>
 
         </div>
       </div>
