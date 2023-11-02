@@ -11,7 +11,7 @@ const NavBarMenu = () => {
   const handleExitClick = () => {
     setIsChecked(!isChecked);
   };
-
+ 
   const toggle = isChecked ? 'active' : 'inactive';
 
   return (

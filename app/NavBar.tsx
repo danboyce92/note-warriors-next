@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import './nav-bar.css';
@@ -27,7 +27,7 @@ const NavBar = () => {
       </div>
       <div className='mobile'>
         <div className='logo'>
-          <Image src={logo} width={65} alt="logo" />
+        <Link href={"/"}><Image src={logo} width={65} alt="logo" /></Link>
         </div>
         <div className='hburger'>
           <NavBarMenu />

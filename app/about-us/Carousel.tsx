@@ -1,19 +1,14 @@
 import React from 'react'
-import Image from 'next/image';
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import './about-us.css';
-import Carousel from './Carousel';
+import Image from 'next/image'
+import './carousel.css';
 import note from '../../public/imgs/note.svg';
 import edu from '../../public/imgs/edu.svg';
 import aim from '../../public/imgs/aim.svg';
 
-
-const AboutUs = () => {
+const Carousel = () => {
   return (
-    <div className='aboutUs'>
-      <div className='shader'>
-        <div className='about-title'>About us</div>
-        <div className='card-container'>
+    <div>
+      <div className='carousel'>
           <div className='card' id="music">
             <div className='card-text'>Note warriors is a music education platform. We specifically focus on the music curriculum taught in Irish schools.</div>
             <div><Image className='card-image' src={note} alt='note icon' /></div>
@@ -26,11 +21,9 @@ const AboutUs = () => {
             <div className='card-text'> This platform aims to test what students have been learning in the classroom and giving them feedback.</div>
             <div><Image className='card-image' src={aim} alt='aims icon' /></div>
           </div>
-        </div>
-        <Carousel />
-        </div>
+      </div>
     </div>
   )
 }
 
-export default AboutUs;
+export default Carousel

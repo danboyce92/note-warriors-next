@@ -1,0 +1,17 @@
+.carousel {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .carousel {
+    visibility: visible;
+    position: absolute;
+    top: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+}
