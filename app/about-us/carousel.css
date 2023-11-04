@@ -7,11 +7,32 @@
   .carousel {
     visibility: visible;
     position: absolute;
+    width: 300%;
     top: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    
+  }
+
+  .car-card {
+    width: 100%;
+    margin: 7rem;
+    padding: 2rem;
   }
 
 
 
+
+
+
+
+
+
+
+
+  .car-card-image {
+    height: 13rem;
+  }
+
 }
+
+
