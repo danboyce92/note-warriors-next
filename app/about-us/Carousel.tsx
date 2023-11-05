@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import './carousel.css';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
@@ -7,24 +9,49 @@ import edu from '../../public/imgs/edu.svg';
 import aim from '../../public/imgs/aim.svg';
 
 const Carousel = () => {
+  const [currentCard, setCurrentCard] = useState(0);
+
+  const cards = [
+    {
+      text: "Note warriors is a music education platform. We specifically focus on the music curriculum taught in Irish schools.",
+      svg: note,
+    },
+    {
+      text: "Our goal is to make the learning experience fun whilst providing teachers with student progress and tangible results.",
+      svg: edu,
+    },
+    {
+      text: "This platform aims to test what students have been learning in the classroom and giving them feedback.",
+      svg: aim,
+    }
+  ];
+
+  const leftButton = () => {
+    if (currentCard === 0) {
+      setCurrentCard(cards.length - 1);
+    } else {
+      setCurrentCard(currentCard - 1);
+    }
+  }
+
+  const rightButton = () => {
+    if (currentCard === cards.length - 1) {
+      setCurrentCard(0);
+    } else {
+      setCurrentCard(currentCard + 1);
+    }
+  }
+
   return (
     <div>
       <div className='carousel'>
-          <div className='car-card' id="music">
-            <div className='card-text'>Note warriors is a music education platform. We specifically focus on the music curriculum taught in Irish schools.</div>
-            <div><Image className='car-card-image' src={note} alt='note icon' /></div>
-          </div>
-          <div className='car-card' id="experience">
-            <div className='card-text'>Our goal is to make the learning experience fun whilst providing teachers with student progress and tangible results.</div>
-            <div ><Image className='car-card-image' src={edu} alt="education icon" /></div>
-          </div>
-          <div className='car-card' id="aim">
-            <div className='card-text'> This platform aims to test what students have been learning in the classroom and giving them feedback.</div>
-            <div><Image className='car-card-image' src={aim} alt='aims icon' /></div>
-          </div>
+          <div className='card-text'>{cards[currentCard].text}</div>
+          <div><Image className='car-card-image' src={cards[currentCard].svg} alt='icon' /></div>
       </div>
+      <div onClick={leftButton} className='arrow-button' id="left"><FaChevronLeft /></div>
+      <div onClick={rightButton} className='arrow-button' id="right"><FaChevronRight /></div>
     </div>
   )
 }
 
-export default Carousel
+export default Carousel;

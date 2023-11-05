@@ -4,34 +4,66 @@
 
 @media only screen and (max-width: 900px) {
 
+  .about-title {
+    padding-left: 2rem;
+  }
+
   .carousel {
     visibility: visible;
     position: absolute;
-    width: 300%;
+    width: 100%;
     top: 30%;
-    display: flex;
+    height: 70%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
     
   }
 
-  .car-card {
-    width: 100%;
-    margin: 7rem;
+  .card-text {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 60%;
+    margin: auto;
     padding: 2rem;
+    font-size: clamp(1.1rem, 6vw, 2.2rem);
+    min-height: 400px;
   }
-
-
-
-
-
-
-
-
-
 
 
   .car-card-image {
-    height: 13rem;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: clamp(150px, 40%, 275px);
+    margin: auto;
+    transform: translateY(-30%);
+
   }
+
+  .arrow-button {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    position: absolute;
+    color: white;
+    top: 55%;
+    border-radius: 40%;
+    padding: .1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .arrow-button:hover {
+    transform: scale(1.5, 1.5);
+    background-color: rgba(255, 255, 255, 0.3);
+
+
+  }
+
+  #left {
+    left: 07%;
+  }
+  #right {
+    right: 07%;
+  }
+
 
 }
 
