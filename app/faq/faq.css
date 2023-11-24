@@ -36,8 +36,37 @@
 }
 
 .title {
+
   font-size:clamp(3.8rem, 8vw, 6rem);
   padding-top: 7rem;
   padding-left: 3.5rem;
   z-index: 1;
+}
+
+@media only screen and (max-height: 650px) {
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #bground-img {
+    background-size: cover;
+    left: 70%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  #bground-img {
+    left: 125%;
+  }
 }
