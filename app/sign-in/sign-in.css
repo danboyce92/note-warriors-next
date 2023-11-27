@@ -1,11 +1,10 @@
-.contact {
+.sign-in {
   width: 100%;
   height: 100vh;
-  background-image: url(../../public/imgs/contact.jpg);
+  background-image: url(../../public/imgs/signin.jpg);
   background-size: cover;
-
 }
-
+ 
 .shader {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -14,17 +13,16 @@
   top: 0;
   left: 0;
   z-index: 0;
-  overflow: hidden;
-
+ overflow: hidden;
 }
 
-.title {
+.sign-in-title {
   font-size:clamp(3.8rem, 8vw, 6rem);
   padding-top: 7rem;
   padding-left: 3.5rem;
 }
 
-.form {
+form {
   width: clamp(290px, 44vw, 500px);
   margin: auto;
   margin-top: 3rem;
@@ -34,21 +32,22 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  padding-top: 2rem;
+  padding-bottom: 1rem;
+
 }
 
-h1 {
+.header {
   font-size: clamp(1.4rem, 8vw, 2rem);
   font-weight: bold;
   padding-bottom: 1rem;
   text-align: center;
 }
 
-span {
+.span {
   font-size: clamp(1.2rem, 6vw, 1.6rem);
 }
 
-input {
+.input {
   color: white;
   background-color: #302e2e;
   font-size: clamp(1rem, 5vw, 1.4rem);
@@ -57,19 +56,9 @@ input {
   border-radius: 4px;
 }
 
-textarea {
-  color: white;
-  background-color: #302e2e;
-  font-size: clamp(1rem, 5vw, 1.4rem);
-  margin: .7rem 0;
-  padding: .4rem .3rem;
-  border-radius: 4px;
-  resize: none;
-}
-
-.send-btn {
+.sign-btn {
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: .4rem 3rem;
   border: 1px solid #95E2BD;
   border-radius: 5px;
@@ -77,29 +66,25 @@ textarea {
   transition: all .3s ease-in-out;
 }
 
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 1px 1px #95E2BD;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-.instructions {
-  padding-top: 1rem;
-  width: clamp(290px, 40vw, 500px);
+.sign-up-prompt {
+  width: 50%;
   margin: auto;
   text-align: center;
+  padding-top: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.color-active {
-  color: #95E2BD;
+.sign-up-prompt:hover {
+  text-decoration: underline;
+  color: rgb(141, 217, 217);
 }
 
-@media only screen and (max-width: 500px) {
-  .title {
-    text-align: center;
-    padding-left: 0;
+
+@media only screen and (max-width: 650px) {
+
+  form {
+    padding: 1.5rem;
+    padding-bottom: .7rem;
   }
+
 }

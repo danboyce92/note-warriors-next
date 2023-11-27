@@ -118,7 +118,7 @@ padding-right: 2rem;
     height: 1px;
     display: block;
     background: white;
-    transition: 300ms;
+    transition: 600ms;
   }
 
   .link:hover::after {

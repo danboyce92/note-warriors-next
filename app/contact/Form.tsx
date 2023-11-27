@@ -26,6 +26,7 @@ const Form = () => {
   return (
     <div>
       <form onSubmit={sendMsg} className='form' ref={formRef}>
+        <h1>Contact us</h1>
         <span>Name</span>
         <input required placeholder='Enter name here..' />
         <span>Email</span>

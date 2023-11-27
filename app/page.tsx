@@ -1,4 +1,5 @@
 import './landing.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,9 +9,9 @@ export default function Home() {
           <div className='title'>Note <br/> Warriors</div>
           <div className='text'>Score High, Soar Higher. <br/> Play, Learn, Conquer.</div>  
           <div className='buttons'>
-              <button className='registerButton'>Register</button>
+          <Link href={"/sign-up"}><button className='registerButton'>Register</button></Link>
               <div className='spacer'></div>
-              <button className='signinButton'>Sign in</button>
+              <Link href={"/sign-in"}><button className='signinButton'>Sign in</button></Link>
             
           </div>
             

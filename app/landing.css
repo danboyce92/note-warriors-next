@@ -26,6 +26,7 @@
 .title {
   font-size:clamp(4.5rem, 20vw, 6.5rem);
   width: 100%;
+  padding-left: 0;
 }
 
 .text {
@@ -59,7 +60,7 @@
 }
 .registerButton:hover {
   color: white;
-  scale: 1.1;
+  scale: 1.03;
   box-shadow: 1px 2px black;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .signinButton:hover {
-  scale: 1.1;
+  scale: 1.03;
   box-shadow: 2px 1px black;
 }
 
@@ -88,6 +89,7 @@
   }
   
   .title {
+    padding-left: 0;
     font-size:clamp(4rem, 20vw, 5rem);
     width: 100%;
 

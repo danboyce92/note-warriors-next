@@ -17,12 +17,9 @@ const NavBar = () => {
 
         <div className='links'>
         <Link href={"/about-us"}><div className='link'>About us</div></Link>
-        <Link href={"/teachers"}><div className='link'>Teachers</div></Link>
-        <Link href={"/students"}><div className='link'>Students</div></Link>
         <Link href={"/faq"}><div className='link'>FAQ</div></Link>
         <Link href={"/contact"}><div className='link'>Contact</div></Link>
         <Link href={"/sign-in"}><div className='link' id="signIn">Sign in</div></Link>
-
         </div>
       </div>
       <div className='mobile'>
