@@ -6,7 +6,7 @@ export default function Home() {
     <main className='background'>
       <div className='shader'>
         <div className='title-container'>
-          <div className='title'>Note <br/> Warriors</div>
+          <div className='land-title'>Note <br/> Warriors</div>
           <div className='text'>Score High, Soar Higher. <br/> Play, Learn, Conquer.</div>  
           <div className='buttons'>
           <Link href={"/sign-up"}><button className='registerButton'>Register</button></Link>

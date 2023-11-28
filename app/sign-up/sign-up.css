@@ -65,7 +65,7 @@ form {
   transition: all .3s ease-in-out;
 }
 
-button:hover {
+.sign-btn:hover {
   transform: scale(1.1);
   box-shadow: 1px 1px #95E2BD;
 }
