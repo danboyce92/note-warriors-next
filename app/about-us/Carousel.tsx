@@ -43,7 +43,7 @@ const Carousel = () => {
   }
 
   return (
-    <div>
+    <div className='carousel-container'>
       <div className='carousel'>
           <div className='card-text'>{cards[currentCard].text}</div>
           <div><Image className='car-card-image' src={cards[currentCard].svg} alt='icon' /></div>

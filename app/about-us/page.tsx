@@ -28,7 +28,7 @@ const AboutUs = () => {
           </div>
         </div>
         <Carousel />
-        </div>
+      </div>
     </div>
   )
 }
