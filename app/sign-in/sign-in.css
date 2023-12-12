@@ -86,5 +86,16 @@ form {
     padding: 1.5rem;
     padding-bottom: .7rem;
   }
+  .header {
+    font-size: clamp(1.2rem, 6vw, 1.6rem);
+  }
+  
+  .span {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+  .input {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+
+  }
 
 }
