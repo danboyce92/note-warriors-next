@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   z-index: 0;
- overflow: hidden;
+  overflow-y: auto;
 }
 
 .sign-in-title {
@@ -26,6 +26,7 @@ form {
   width: clamp(290px, 44vw, 500px);
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   background-color: #3f3f3f;
   border-radius: 6px;
   border: 1px solid #303030;
@@ -82,6 +83,13 @@ form {
 
 @media only screen and (max-width: 650px) {
 
+  .sign-in-title {
+    font-size:clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    padding-top: 4.5rem;
+    padding-left: 0;
+  }
+
   form {
     padding: 1.5rem;
     padding-bottom: .7rem;
@@ -96,6 +104,14 @@ form {
   .input {
     font-size: clamp(1rem, 3vw, 1.3rem);
 
+  }
+
+  .sign-up-prompt {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.8rem;
+    transition: all 0.2s ease-in-out;
   }
 
 }

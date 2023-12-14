@@ -90,6 +90,7 @@ textarea {
   padding-top: 1rem;
   width: clamp(290px, 40vw, 500px);
   margin: auto;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
