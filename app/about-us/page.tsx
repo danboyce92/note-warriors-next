@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import './about-us.css';
 import Carousel from './Carousel';
 import note from '../../public/imgs/note.svg';
 import edu from '../../public/imgs/edu.svg';
 import aim from '../../public/imgs/aim.svg';
-
+ 
 
 const AboutUs = () => {
   return (
