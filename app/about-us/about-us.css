@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: 70%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  
 }
 
 .shader {
@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   z-index: 0;
-
+  overflow-y: auto;
 }
 
 .about-title {
