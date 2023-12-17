@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* <link rel="preload" href="./public/imgs/aboutus.jpg" as="image" /> */}
       <body className={raleway.className}>
         {children}
         <nav><NavBar /></nav>
