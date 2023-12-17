@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className='faq'>
       <div id="bground-img"></div>
-      <div className='shader'>
+      <div className='faq-shader'>
         <div className='title'>
           FAQ
         </div>

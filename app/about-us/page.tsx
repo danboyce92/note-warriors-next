@@ -10,7 +10,7 @@ import aim from '../../public/imgs/aim.svg';
 const AboutUs = () => {
   return (
     <div className='aboutUs'>
-      <div className='shader'>
+      <div className='aus-shader'>
         <div className='about-title'>About us</div>
         <div className='card-container'>
           <div className='card' id="music">

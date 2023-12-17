@@ -2,12 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import './sign-up.css';
 import signup from '../../public/imgs/signup.jpg';
-
+ 
 const SignUp = () => {
   return (
     <div>
       <Image src={signup} alt='background' id="sign-up-img" />
-      <div className='shader'>
+      <div className='sup-shader'>
         <div className='sign-up-title'>Sign up</div>
 
         <form>

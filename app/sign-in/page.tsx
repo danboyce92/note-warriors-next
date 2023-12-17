@@ -5,9 +5,9 @@ import Link from 'next/link';
 const SignIn = () => {
   return (
     <div className='sign-in'>
-      <div className='shader'>
+      <div className='sin-shader'>
         <div className='sign-in-title'>Sign in</div>
-      
+       
         <form>
           <h1 className='header'>Sign in</h1>
           <span className='span'>Email</span>

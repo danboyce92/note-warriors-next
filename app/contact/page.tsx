@@ -5,7 +5,7 @@ import Form from './Form';
 const Contact = () => {
   return (
     <div className='contact'>
-      <div className='shader'>
+      <div className='con-shader'>
         <div className='title'>Contact</div>
         <Form />
 
